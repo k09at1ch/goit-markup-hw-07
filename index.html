@@ -43,15 +43,33 @@
                         </button> 
                         <p class="title-for-ordering">Leave your contacts and we will call you back</p>
                         <form name="ordering" autocomplete="on" novalidate>
-                            <div class="leaving-info">
-                                <label>
-                                    <p>Name</p>
-                                    <svg class="logo-ordering">
-                                        <use href="./images/person.svg#all" width="12px" height="12px" class="logos-person"></use>
-                                    </svg>
-                                    <input type="name" class="input-pole">
-                                </label>
-                            </div>
+                            <label><p>Name</p>
+                                <div class="leaving-info">
+                                    
+                                        <input type="name" class="input-pole">
+                                        <svg class="logo-ordering" width="12px" height="12px">
+                                            <use href="./images/person.svg#all" width="12px" height="12px" class="logos-person"></use>
+                                        </svg>
+                                    </div>
+                            </label>
+                            <label><p>Phone</p>
+                                <div class="leaving-info">
+                                    
+                                        <input type="name" class="input-pole">
+                                        <svg class="logo-ordering" width="13px" height="13px">
+                                            <use href="./images/phone.svg#all" width="13px" height="13px" class="logos-person"></use>
+                                        </svg>
+                                    </div>
+                            </label>
+                            <label><p>Email</p>
+                                <div class="leaving-info">
+                                    
+                                        <input type="name" class="input-pole">
+                                        <svg class="logo-ordering" width="15px" height="12px">
+                                            <use href="./images/mail.svg#all" width="15px" height="12px" class="logos-person"></use>
+                                        </svg>
+                                    </div>
+                            </label>
                         </form>  
                     </div>
                 </div>
@@ -352,35 +370,51 @@
             <div class="socials-container">
                 <h2 class="social-media-title">Social media:</h2>
                 <ul class="removing-list-style">
-                    <li class="margins-footer">
-                        <a href="" class="our-team-socials-a-footer">
-                            <svg width="40px" height="40px" class="our-team-socials" >
+                    <li class="margins">
+                        <a href="" class="our-team-socials-a">
+                            <svg width="40px" height="40px" class="our-team-socials">
                                 <use href="images/inst.svg#all"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="margins-footer">
-                        <a href="" class="our-team-socials-a-footer">
+                    <li class="margins">
+                        <a href="" class="our-team-socials-a">
                             <svg width="40px" height="40px" class="our-team-socials" >
                                 <use href="images/twit.svg#all"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="margins-footer">
-                        <a href="" class="our-team-socials-a-footer">
+                    <li class="margins">
+                        <a href="" class="our-team-socials-a">
                             <svg width="40px" height="40px" class="our-team-socials" >
                                 <use href="images/face.svg#all"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="margins-footer">
-                        <a href="" class="our-team-socials-a-footer">
+                    <li class="margins">
+                        <a href="" class="our-team-socials-a">
                             <svg width="40px" height="40px" class="our-team-socials" >
                                 <use href="images/idk.svg#all"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="subscribe">
+                <h3 class="title-Subscribe">Subscribe</h3>
+                <form name="Subscribe">
+                    <label class="label-Subscribe">
+                        <input type="email" class="Subscribe-pole" placeholder="E-mail">
+                    </label>
+                </form>
+            </div>
+            <div class="sub-button">
+                <button type="submit" class="submit">
+                    <p class="text-on-sub-button">Subscribe</p>
+                    <svg class="tg" width="24px" height="20px">
+                        <use href="./images/telegram.svg#all"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </footer> 

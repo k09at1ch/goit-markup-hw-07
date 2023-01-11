@@ -510,16 +510,16 @@ li>a:hover{
 .our-team-socials-a{
     width: 100%;
     min-height: 100%;
+    background-color: #4d5ae5;
     color: var(--iris);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team-socials{
-    fill: currentColor;
-}
+
 .our-team-socials-a:hover,
 .our-team-socials-a:focus{
     color: var(--green);
@@ -613,7 +613,7 @@ footer{
     padding: 100px 0px;
 }
 
-.container-try{
+.container-try:not(.sub-button){
     display: flex;
 }
 
@@ -660,6 +660,10 @@ footer{
     line-height: 24px;
     color: #fff;
     margin-bottom: 16px;
+}
+
+.socials-container{
+    margin-right: 80px;
 }
 
 .margins-footer{
@@ -709,6 +713,7 @@ footer{
     height: 576px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    padding: 72px 24px 0 24px;
 }
 
 .backdrop.is-hidden .modal{
@@ -736,9 +741,7 @@ footer{
 /* order service */
 
 .leaving-info{
-    position: static;
-    padding: 0px 24px;
-    margin: 16px 0 8px 0;
+    position: relative;
 }
 
 .title-for-ordering{
@@ -747,31 +750,75 @@ footer{
     line-height: 24px;
     display: block;
     position: static;
-    padding: 72px 24px 0px 24px;
     letter-spacing: 0.02em;
 }
 
 .input-pole{
-    height: 40px;
-    width: 360px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    padding: 11px 0 11px 34px;
 }
 
-.input-pole:hover,
-.input-pole:focus{
-    border: 1px solid var(--iris);
-    border-radius: 4px;
+.input-pole:hover{
+    border: 1px solid #4d5ae5;
 }
 
 .logo-ordering{
-    width: 12px;
-    height: 12px;
     position: absolute;
-    top: 144px;
-    left: 43px;
+    top: 14px;
+    left: 19px;
 }
 
-.logos-person{
-    fill: var(--navy-blue);
+/* Subscribe */
+
+.title-Subscribe{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 16px;
 }
+
+.Subscribe-pole{
+    background-color: var(--navy-blue);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    padding: 1px 0 1px 16px;
+}
+
+.tg{
+   position: absolute; 
+   top: 10px;
+   right: 24px;
+}
+
+.text-on-sub-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 24px;
+}
+
+.submit{
+    border: 0;
+    text-decoration: none;
+    background: #4D5AE5;
+    border-radius: 4px;
+    width: 168px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.sub-button{
+    margin-top: 40px;
+    position: relative;
+    margin-left: 24px;
+}
+
