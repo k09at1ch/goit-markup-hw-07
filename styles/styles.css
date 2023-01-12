@@ -852,10 +852,11 @@ footer{
     width: 168px;
     height: 40px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sub-button:hover,
-.sub-button:focus{
+.submit:hover,
+.submit:focus{
     background-color: #404BBF;
 }
 
@@ -863,7 +864,6 @@ footer{
     margin-top: 40px;
     position: relative;
     margin-left: 24px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment{
