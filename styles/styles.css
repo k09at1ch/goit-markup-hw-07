@@ -306,15 +306,12 @@ li>a:hover{
     margin: 48px auto 0;
     border: 0;
 
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus{
-    background: var(--iris);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #404BBF;
 }
 
 .about-us{
@@ -520,6 +517,10 @@ li>a:hover{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.our-team-socials{
+    fill: currentColor;
+}
+
 .our-team-socials-a:hover,
 .our-team-socials-a:focus{
     color: var(--green);
@@ -608,6 +609,8 @@ li>a:hover{
 
 /* footer */
 
+
+
 footer{
     background-color: var(--navy-blue);
     padding: 100px 0px;
@@ -678,12 +681,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team-socials{
+
+.our-team-socials-footer{
     fill: currentColor;
 }
 .our-team-socials-a-footer:hover,
@@ -695,12 +696,33 @@ footer{
 
 .button-close{
     width: 24px;
-    height: 24px;    cursor: pointer;
-    background-color: #fff;
-    border: 0px solid white;
+    height: 24px;    
+    cursor: pointer;
+    background-color: var(--cornflower);
+    border: none;
+    border-radius: 50%;
     position: absolute;
     top: 24px;
     right: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close:hover,
+.button-close:focus{
+    background-color: var(--cornflower);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border: 1px solid var(--cornflower);
+}
+
+.svg-close{
+    margin: 7px;
+}
+
+
+.button-close:hover,
+.button-close:focus{
+    fill: #E7E9FC;
 }
 
 .modal{
@@ -742,6 +764,7 @@ footer{
 
 .leaving-info{
     position: relative;
+    margin-top: 4px;
 }
 
 .title-for-ordering{
@@ -750,7 +773,7 @@ footer{
     line-height: 24px;
     display: block;
     position: static;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
 }
 
 .input-pole{
@@ -761,14 +784,21 @@ footer{
     padding: 11px 0 11px 34px;
 }
 
-.input-pole:hover{
+.input-pole:focus{
     border: 1px solid #4d5ae5;
+    outline: none;
 }
 
 .logo-ordering{
     position: absolute;
     top: 14px;
     left: 19px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--navy-blue);
+}
+
+.logo-ordering:hover{
+    fill: var(--iris);
 }
 
 /* Subscribe */
@@ -788,6 +818,12 @@ footer{
     width: 264px;
     height: 40px;
     padding: 1px 0 1px 16px;
+    outline: none;
+    color: #F4F4FD;
+}
+
+.Subscribe-pole:focus{
+    border-color: var(--iris);
 }
 
 .tg{
@@ -816,9 +852,93 @@ footer{
     cursor: pointer;
 }
 
+.sub-button:hover,
+.sub-button:focus{
+    background-color: #404BBF;
+}
+
 .sub-button{
     margin-top: 40px;
     position: relative;
     margin-left: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.comment{
+    width: 360px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 8px 0 0 16px;
+    margin-bottom: 16px;
+}
+
+.comment::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.comment:focus{
+    border: 1px solid var(--iris);
+    border-radius: 4px;
+    outline: none;
+}
+
+.accepting-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+    letter-spacing: 0.04em;
+}
+
+.accepting{
+    margin-top: 16px;
+}
+
+.accepting-text-a{
+    color: var(--iris);
+}
+
+.leaving-info-last{
+    display: flex;
+}
+
+.sending{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: var(--iris);
+    width: 170px;
+    height: 51px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 24px 95px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sending:hover,
+.sending:focus{
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.about-input{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--light-slate);
+    margin-top: 8px;
+}
+
+.staff{
+    margin-top: 16px;
+}
