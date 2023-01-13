@@ -511,19 +511,21 @@ li>a:hover{
     color: var(--iris);
     border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-socials{
-    fill: currentColor;
+.our-team-socials1{
+    padding: 12px;
 }
-
+.our-team-socials2{
+    padding: 13.5px 12px;
+}
+.our-team-socials3{
+    padding: 12px 15.87px;
+}
 .our-team-socials-a:hover,
 .our-team-socials-a:focus{
-    color: var(--green);
+    background-color: var(--green);
 }
 
 .name{
@@ -666,30 +668,27 @@ footer{
 }
 
 .socials-container{
-    margin-right: 80px;
-}
-
-.margins-footer{
-    width: 40px;
-    height: 40px;
+    margin-right: auto;
 }
 
 .our-team-socials-a-footer{
     width: 100%;
     min-height: 100%;
-    color: rgba(255, 255, 255, 0.1);;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--iris);
+    border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-socials-footer{
-    fill: currentColor;
+.our-team-socials-a-footer:focus,
+.our-team-socials-a-footer:hover{
+    background-color: #31D0AA;
 }
-.our-team-socials-a-footer:hover,
-.our-team-socials-a-footer:focus{
-    color: var(--green);
+
+.margins-footer{
+    width: 40px;
+    height: 40px;
 }
 
 /* modal */
@@ -736,7 +735,6 @@ footer{
     width: 408px;
     height: 576px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
     padding: 72px 24px 0 24px;
 }
 
@@ -781,9 +779,10 @@ footer{
 .input-pole{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    width: 360px;
+    width: 100%;
     height: 40px;
-    padding: 11px 0 11px 34px;
+    padding: 11px 34px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-pole:focus{
@@ -828,20 +827,12 @@ footer{
     border-color: var(--iris);
 }
 
-.tg{
-   position: absolute; 
-   top: 10px;
-   right: 24px;
-}
-
 .text-on-sub-button{
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: #fff;
-    position: absolute;
-    top: 8px;
-    left: 24px;
+    padding: 8px 64px 8px 24px;
 }
 
 .submit{
@@ -853,6 +844,14 @@ footer{
     height: 40px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    margin-left: 24px;
+}
+
+.tg{
+    position: absolute;
+    top: 10px;
+    left: 120px;
 }
 
 .submit:hover,
@@ -867,13 +866,14 @@ footer{
 }
 
 .comment{
-    width: 360px;
+    width: 100%;
     height: 120px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 8px 0 0 16px;
     margin-bottom: 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment::placeholder{
@@ -887,14 +887,6 @@ footer{
     border: 1px solid var(--iris);
     border-radius: 4px;
     outline: none;
-}
-
-.accepting-text{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #757575;
-    letter-spacing: 0.04em;
 }
 
 .accepting{
@@ -943,4 +935,34 @@ footer{
 
 .staff{
     margin-top: 16px;
+}
+
+.accepting-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+    letter-spacing: 0.04em;
+    padding-left: 24px;
+}
+.none{
+    width: 16px;
+    height: 16px;
+}
+.checkbox-svg{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background-color: #4D5AE5;
+    width: auto;
+    height: auto;
+    padding: 4px 3px;
+    border-radius: 2px;
+    opacity: 0;
+}
+.none:checked{
+    opacity: 0;
+}
+.none:checked+.checkbox-svg{
+    opacity: 1;
 }
