@@ -18,11 +18,13 @@
             <a href="" class="top">
                 <span class="web-foot">WEB</span><span class="nig">STUDIO</span> 
             </a>
-                <button type="button" class="menu-button" js-open-menu>
-                    <svg class="menu-mobile">
-                        <use href="./images/menu.svg#all"></use>
-                    </svg>
-                </button>
+                <div class="for-tablet-desktop">
+                    <button type="button" class="menu-button" js-open-menu>
+                        <svg class="menu-mobile">
+                            <use href="./images/menu.svg#all"></use>
+                        </svg>
+                    </button>
+                </div>
                 <div class="menu-container is-open" id="menu-container" js-menu-container>
                 <button type="button" class="button-close" js-close-menu>
                     <svg class="svg-close" width="8px" height="8px">
@@ -35,9 +37,41 @@
                     <li><a href="" class="nav-sites">Contacts</a></li>
                 </ul>
                 <ul class="general2">
-                    <li><a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a></li>
-                    <li><a href="tel:+11(000)111-11-11" class="contacts">+11 (000) 111-11-11</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="contacts contacts1">info@devstudio.com</a></li>
+                    <li><a href="tel:+11(000)111-11-11" class="contacts contacts2">+11 (000) 111-11-11</a></li>
                 </ul>
+                <div class="tablet-none">
+                    <ul class="removing-list-style1">
+                        <li class="margins">
+                            <a href="" class="our-team-socials-a">
+                                <svg class="our-team-socials1 our-team-socials">
+                                    <use href="images/instagram.svg#all"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="margins">
+                            <a href="" class="our-team-socials-a">
+                                <svg class="our-team-socials2 our-team-socials" >
+                                    <use href="images/twiter.svg#all"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="margins">
+                            <a href="" class="our-team-socials-a">
+                                <svg class="our-team-socials3 our-team-socials" >
+                                    <use href="images/facebook.svg#all"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="margins">
+                            <a href="" class="our-team-socials-a">
+                                <svg class="our-team-socials1 our-team-socials" >
+                                    <use href="images/in.svg#all"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div> 
     </header>
@@ -444,6 +478,7 @@
             </div>
         </div>
     </footer> 
-    <script src="./modal.js"></script>
+    <script src="./javascript/modal.js"></script>
+    <script src="./javascript/mobile-menu.js"></script>
 </body> 
 </html> 
