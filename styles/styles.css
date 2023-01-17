@@ -40,12 +40,15 @@ ul{
         width: 168px;
         height: 40px;
         cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
         margin-left: 24px;
     }
     /* menu */
     .menu-container{
+        overflow: scroll;
+
         opacity: 0;
         pointer-events: none;
         position: absolute;
@@ -117,9 +120,12 @@ ul{
         margin-top: 48px;
     }
     .is-open{
+        width: 100vw;
+        height: 100vh;
         opacity: 1;
         pointer-events: all;
-        transition: opacity 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        
     }
     /* index */
     .menu-mobile{
@@ -174,6 +180,9 @@ ul{
             overflow: hidden;
             pointer-events: none;
     }
+    .section-3{
+        padding: 96px 0;
+    }
     .main-section-1{
         background-image: linear-gradient(90deg, rgba(46,47,66,0.7) 100%, rgba(46,47,66,0.7) 100%), url('../images/office.jpg');
         background-size: 1440px 603px;
@@ -182,7 +191,7 @@ ul{
         padding-bottom: 109px;
         width: 428px;
         height: 432px;
-        margin: 0px auto 96px auto;
+        margin: 0 auto;
     }
 
     .general-title{
@@ -230,6 +239,13 @@ ul{
         letter-spacing: 0.02em;
         color: #434455;
         margin-bottom: 72px;
+    }
+    .descrip1{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #434455;
     }
     .section-what-doing{
             position: absolute;
@@ -360,7 +376,7 @@ ul{
         width: 392px;
         height: 579px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 72px 24px 0 24px;
+        padding: 72px 24px 24px 24px;
     }
     
     .backdrop.is-hidden .modal{
@@ -392,7 +408,6 @@ ul{
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         padding: 8px 0 0 16px;
-        margin-bottom: 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
@@ -439,7 +454,8 @@ ul{
         font-weight: 600;
         font-size: 16px;
         line-height: 19px;
-        margin: 24px 95px;
+        display: block;
+        margin: 24px auto 0 auto;
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -452,7 +468,7 @@ ul{
     }
     
     .about-input{
-        font-weight: 400;
+        display: block;
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.01em;
@@ -462,10 +478,12 @@ ul{
     
     .staff{
         margin-top: 16px;
+        display: block;
     }
     
     .accepting-text{
-        font-weight: 400;
+        margin-top: 16px;
+        display: block;
         font-size: 12px;
         line-height: 16px;
         color: #757575;
@@ -473,6 +491,8 @@ ul{
         padding-left: 8px;
     }
     .none{
+        margin-top: 16px;
+        display: block;
         width: 16px;
         height: 16px;
     }
@@ -517,18 +537,6 @@ ul{
         color: #F4F4FD;
         margin-bottom: 16px;
     }
-    .submit{
-        border: 0;
-        text-decoration: none;
-        background: #4D5AE5;
-        border-radius: 4px;
-        width: 168px;
-        height: 40px;
-        cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        margin-left: 24px;
-    }
     
     .tg{
         position: absolute;
@@ -543,7 +551,10 @@ ul{
         text-align: center;
     }
     .socials-container-footer{
-        margin: 72px auto;
+        margin: 0 auto 72px auto;
+    }
+    .conclusion{
+        margin-bottom: 72px;
     }
 }
 
@@ -594,6 +605,17 @@ asfgsdfsddata  */
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px){
+    .footer-for-tablet{
+        display: flex;
+        column-gap: 24px;
+    }
+    .h-for-descrip{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+    }
      /* MODAL */
      .modal{
         position: relative;
@@ -604,7 +626,7 @@ asfgsdfsddata  */
         width: 408px;
         height: 576px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 72px 24px 0 24px;
+        padding: 72px 24px 24px 24px;
     }
     
     .backdrop.is-hidden .modal{
@@ -736,7 +758,6 @@ asfgsdfsddata  */
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         padding: 8px 0 0 16px;
-        margin-bottom: 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
@@ -776,7 +797,8 @@ asfgsdfsddata  */
         font-weight: 600;
         font-size: 16px;
         line-height: 19px;
-        margin: 24px 95px;
+        display: block;
+        margin: 24px auto 0 auto;
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -789,7 +811,7 @@ asfgsdfsddata  */
     }
     
     .about-input{
-        font-weight: 400;
+        display: block;
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.01em;
@@ -798,11 +820,13 @@ asfgsdfsddata  */
     }
     
     .staff{
+        display: block;
         margin-top: 16px;
     }
     
     .accepting-text{
-        font-weight: 400;
+        margin-top: 16px;
+        display: block;
         font-size: 12px;
         line-height: 16px;
         color: #757575;
@@ -810,6 +834,8 @@ asfgsdfsddata  */
         padding-left: 8px;
     }
     .none{
+        margin-top: 16px;
+        display: block;
         width: 16px;
         height: 16px;
     }
@@ -1082,32 +1108,17 @@ asfgsdfsddata  */
         column-gap: 24px;
         row-gap: 72px;
         align-items: center;
-        margin: 0 0 0 56px;
+        justify-content: center;
     }
     .container-try{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
-    .submit{
-        border: 0;
-        text-decoration: none;
-        background: #4D5AE5;
-        border-radius: 4px;
-        width: 168px;
-        height: 40px;
-        cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-    }
-    .socials-container-footer{
-        margin-left: 24px;
-    }
-    .conclusion{
-        margin-left: 76px;
-    }
+    
     .subscribe{
-        margin-left: 76px;
         margin-top: 72px;
     }
 }
@@ -1178,6 +1189,7 @@ asfgsdfsddata  */
         margin: 0;
         text-decoration: none;
         padding: 24px 0;
+        margin-right: 77px;
     }
     .position-relative{
         position:relative;
@@ -1188,7 +1200,6 @@ asfgsdfsddata  */
     .general{
         list-style: none;
         column-gap: 40px;
-        margin-left: 77px;
         margin-right: 331px;
     }
     .tablet-needed{
@@ -1554,7 +1565,7 @@ asfgsdfsddata  */
         width: 408px;
         height: 576px;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        padding: 72px 24px 0 24px;
+        padding: 72px 24px 24px 24px;
     }
 
     .backdrop.is-hidden .modal{
@@ -1649,7 +1660,6 @@ asfgsdfsddata  */
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         padding: 8px 0 0 16px;
-        margin-bottom: 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
@@ -1689,7 +1699,8 @@ asfgsdfsddata  */
         font-weight: 600;
         font-size: 16px;
         line-height: 19px;
-        margin: 24px 95px;
+        display: block;
+        margin: 24px auto 0 auto;
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -1702,7 +1713,7 @@ asfgsdfsddata  */
     }
     
     .about-input{
-        font-weight: 400;
+        display: block;
         font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.01em;
@@ -1711,11 +1722,13 @@ asfgsdfsddata  */
     }
     
     .staff{
+        display: block;
         margin-top: 16px;
     }
     
     .accepting-text{
-        font-weight: 400;
+        margin-top: 16px;
+        display: block;
         font-size: 12px;
         line-height: 16px;
         color: #757575;
@@ -1723,6 +1736,8 @@ asfgsdfsddata  */
         padding-left: 8px;
     }
     .none{
+        margin-top: 16px;
+        display: block;
         width: 16px;
         height: 16px;
     }
@@ -1754,6 +1769,13 @@ asfgsdfsddata  */
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
         margin-left: 24px;
+    }
+    .h-for-descrip{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 8px;
     }
 }
 .button-port{
@@ -1885,14 +1907,6 @@ body{
     background-color: #404BBF;
 }
 
-.h-for-descrip{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
 .our-team-container{
     padding: 32px 16px;
 }
@@ -1910,6 +1924,8 @@ body{
     color: var(--iris);
     border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 40px;
     height: 40px;
@@ -1917,13 +1933,16 @@ body{
 
 
 .our-team-socials1{
-    padding: 12px;
+   width: 16px;
+   height: 16px;
 }
 .our-team-socials2{
-    padding: 13.5px 12px;
+    width: 16px;
+    height: 16px;
 }
 .our-team-socials3{
-    padding: 12px 15.87px;
+    width: 8px;
+    height: 16px;
 }
 .our-team-socials-a:hover,
 .our-team-socials-a:focus{
@@ -1994,6 +2013,8 @@ footer{
     color: var(--iris);
     border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 40px;
     height: 40px;
@@ -2050,8 +2071,8 @@ footer{
 
 .tg{
     position: absolute;
-    top: 10px;
-    left: 120px;
+    top: 12px;
+    right: 24px;
 }
 
 .submit:hover,
