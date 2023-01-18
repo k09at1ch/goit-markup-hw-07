@@ -48,7 +48,7 @@ ul{
     /* menu */
     .menu-container{
         overflow: scroll;
-
+        z-index: 99999999;
         opacity: 0;
         pointer-events: none;
         position: absolute;
@@ -125,7 +125,7 @@ ul{
         opacity: 1;
         pointer-events: all;
         transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
-        
+        position: fixed;
     }
     /* index */
     .menu-mobile{
@@ -350,6 +350,9 @@ ul{
     .input-pole:focus+.logo-ordering{
         fill: var(--iris);
     }
+    .input-pole:focus+.logo-ordering3{
+        fill: var(--iris);
+    }
     .button-close:hover,
     .button-close:focus{
         background-color: var(--cornflower);
@@ -434,11 +437,21 @@ ul{
     
     .leaving-info-last{
         display: flex;
+        margin-top: 16px;
     }
     .logo-ordering{
         position: absolute;
-        top: 14px;
+        top: 16.67%;
         left: 19px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: var(--navy-blue);
+    }
+    .logo-ordering3{
+        position: absolute;
+        top: 20.83%;
+        left: 19px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: var(--navy-blue);
     }
     .leaving-info{
         position: relative;
@@ -482,7 +495,6 @@ ul{
     }
     
     .accepting-text{
-        margin-top: 16px;
         display: block;
         font-size: 12px;
         line-height: 16px;
@@ -498,7 +510,7 @@ ul{
     }
     .checkbox-svg{
         position: absolute;
-        top: 1px;
+        top: 16px;
         left: 1px;
         background-color: #4D5AE5;
         width: auto;
@@ -684,12 +696,24 @@ asfgsdfsddata  */
     
     .logo-ordering{
         position: absolute;
-        top: 14px;
+        top: 16.67%;
         left: 19px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         fill: var(--navy-blue);
     }
-    
+    .logo-ordering3{
+        position: absolute;
+        top: 20.83%;
+        left: 19px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: var(--navy-blue);
+    }
+    .input-pole:focus+.logo-ordering{
+        fill: var(--iris);
+    }
+    .input-pole:focus+.logo-ordering3{
+        fill: var(--iris);
+    }
     .logo-ordering:hover{
         fill: var(--iris);
     }
@@ -787,6 +811,7 @@ asfgsdfsddata  */
     
     .leaving-info-last{
         display: flex;
+        margin-top: 16px;
     }
     
     .sending{
@@ -828,7 +853,6 @@ asfgsdfsddata  */
     }
     
     .accepting-text{
-        margin-top: 16px;
         display: block;
         font-size: 12px;
         line-height: 16px;
@@ -837,14 +861,13 @@ asfgsdfsddata  */
         padding-left: 8px;
     }
     .none{
-        margin-top: 16px;
         display: block;
         width: 16px;
         height: 16px;
     }
     .checkbox-svg{
         position: absolute;
-        top: 1px;
+        top: 16px;
         left: 1px;
         background-color: #4D5AE5;
         width: auto;
@@ -914,7 +937,6 @@ asfgsdfsddata  */
     .top{
         padding: 24px 0;
         margin-right: 84px;
-        height: 22px;
     }
     .tablet-needed{
         display: flex;
@@ -1274,7 +1296,8 @@ asfgsdfsddata  */
         background-position: center;
         padding-top: 192px; 
         padding-bottom: 208px;
-        width: 1440px;
+        width: 100%;
+        max-width: 1440px;
         height: 603px;  
         margin: 0px auto;
     }
@@ -1637,7 +1660,7 @@ asfgsdfsddata  */
     }
     .logo-ordering3{
         position: absolute;
-        top: 14px;
+        top: 20.83%;
         left: 19px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         fill: var(--navy-blue);
@@ -1645,7 +1668,12 @@ asfgsdfsddata  */
     .logo-ordering:hover{
         fill: var(--iris);
     }
-
+    .input-pole:focus+.logo-ordering{
+        fill: var(--iris);
+    }
+    .input-pole:focus+.logo-ordering3{
+        fill: var(--iris);
+    }
     .main-section-port{
         padding: 96px 0 120px 0;
    }
@@ -1702,6 +1730,7 @@ asfgsdfsddata  */
     
     .leaving-info-last{
         display: flex;
+        margin-top: 16px;
     }
     
     .sending{
@@ -1743,7 +1772,6 @@ asfgsdfsddata  */
     }
     
     .accepting-text{
-        margin-top: 16px;
         display: block;
         font-size: 12px;
         line-height: 16px;
